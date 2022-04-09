@@ -15,12 +15,12 @@ export const Home = ()=>{
     return (
         <div className="maindiv">
         <div className="google" >
-            <h1>G</h1>
-            <h1>O</h1>
-            <h1>O</h1>
-            <h1>G</h1>
-            <h1>L</h1>
-            <h1>E</h1>
+            <h1 className="go">G</h1>
+            <h1 className="oo">O</h1>
+            <h1 className="gll">O</h1>
+            <h1 className="go">G</h1>
+            <h1 className="oo">L</h1>
+            <h1 className="gll">E</h1>
         </div>
         <input className="search-box" placeholder="search here" onChange={((e)=>{
             settext(e.target.value);

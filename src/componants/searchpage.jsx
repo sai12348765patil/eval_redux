@@ -18,7 +18,12 @@ export const SearchPage = ()=>{
         axios.get("https://fast-reef-22226.herokuapp.com/data").then(({ data }) => {setdata(data)})
     },[])
 
-    console.log(data);
+ function sortatob() {
+    //     data = data.sort((a,b)=>a-b);
+    console.log("sai")
+     }
+
+    // console.log(data);
     return (
         <div>
             <div id="navbar">
@@ -29,9 +34,9 @@ export const SearchPage = ()=>{
                 <hr/>
                 <br/>
                 <div id="button">
-                    <button className="search" >Sort A-Z</button>
+                    <button className="search" onClick={sortatob()}>Sort A-Z</button>
 
-                    <button className="search">Sort Z-A</button>
+                    <button className="search" >Sort Z-A</button>
                     <button className="search">Sort by Date(asc)</button>
                     <button className="search">Sort by date (desc)</button>
                     <button className="search"> Sort by quality (asc)</button>
