@@ -19,7 +19,18 @@ export const SearchPage = ()=>{
     },[])
 
  function sortatob() {
-    //     data = data.sort((a,b)=>a-b);
+        data = data.sort((a,b)=>{
+            var namea = a.title;
+            var nameb = b.title;
+            if(namea<nameb) {
+                return -1;
+            }
+            if(namea>nameb){
+               return 1;
+            }
+            return 0;
+        });
+        setdata(data);
     console.log("sai")
      }
 
@@ -34,7 +45,7 @@ export const SearchPage = ()=>{
                 <hr/>
                 <br/>
                 <div id="button">
-                    <button className="search" onClick={sortatob()}>Sort A-Z</button>
+                    <button className="search" onClick={sortatob}>Sort A-Z</button>
 
                     <button className="search" >Sort Z-A</button>
                     <button className="search">Sort by Date(asc)</button>
