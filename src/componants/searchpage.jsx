@@ -9,10 +9,10 @@ import { Link } from "react-router-dom";
 
 export const SearchPage = ()=>{
     let [data,setdata] = useState([]);
-    const [text,settext] = useState("");
+    // const [text,settext] = useState("");
 
     // const sai = useSelector((store)=>store.data);
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     useEffect(()=>{
         axios.get("https://fast-reef-22226.herokuapp.com/data").then(({ data }) => {setdata(data)})

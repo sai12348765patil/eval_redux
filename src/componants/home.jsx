@@ -24,8 +24,7 @@ export const Home = ()=>{
         </div>
         <input className="search-box" placeholder="search here" onChange={((e)=>{
             settext(e.target.value);
-            
-        })}  onKeyDown={handleKeyDown} />
+            })}  onKeyDown={handleKeyDown} />
         </div>
     )
 }
